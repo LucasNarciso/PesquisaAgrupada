@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa Agrupada</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="divGeral">
+        <div class="divCampos">
+            <select id="usuario" class="campoPadrão" style="width: 100px;">
+                <option value="001">Adrian</option>
+                <option value="002">Jonata</option>
+                <option value="003">Diego</option>
+                <option value="004">David</option>
+                <option value="005">Ana</option>
+                <option value="006">Alex</option>
+                <option value="007">Edu</option>
+                <option value="008">Karla</option>
+            </select>
+            <select id="coluna" class="campoPadrão" style="width: 100px;">
+                <option value="3">Título</option>
+                <option value="4">Diretor</option>
+                <option value="5">Ano</option>
+                <option value="6">País</option>
+                <option value="7">Duração</option>
+            </select>
+            <select id="tipoPesquisa" class="campoPadrão" style="width: 100px;">
+                <option value="pesquisaPadrao">Padrão</option>
+                <option value="pesquisaAgrupada">Agrupada</option>
+            </select>
+            <input id="pesquisa" class="campoPadrão" style="width: 400px;"/>
+            <button class="botaoPesquisa" onclick="sendRequest()">Pesquisar</button>
+        </div>
+        <div class="divResultados">
+            <div id="resultadoPesquisa" class="divOverflowResultados">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
