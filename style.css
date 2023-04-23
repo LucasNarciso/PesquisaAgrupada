@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.divGeral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.divCampos{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 30px;
+    width: 700px;
+}
+
+.campoPadrão{
+    display: flex;
+    background-color: #d4d4d4;
+    height: auto;
+    border: 1px solid #4b4b4b;
+    outline: none;
+    padding: 5px;
+    border-radius: 0px;
+}
+
+.campoPadrão:hover{
+    border: 1px solid #b9b9b9;
+}
+
+.campoPadrão > option{
+    border-radius: 0px;
+}
+
+optgroup{
+    background-color: antiquewhite;
+}
+
+.botaoPesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d4d4d4;
+    width: auto;
+    height: auto;
+    line-height: 30px;
+    border: 1px solid #4b4b4b;
+    padding: 5px 15px;  
+}
+
+.botaoPesquisa:hover{
+    cursor: pointer;
+    background-color: #a3a3a3;
+}
+
+.divResultados{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #4b4b4b;
+    width: 700px;
+    height: 500px;
+    margin-bottom: 15px;
+}
+
+.divOverflowResultados{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    padding-right: 5px;
+    gap: 10px;
+}
+
+.divCardResultado{
+    font-size: 14px;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 90%;
+    box-shadow: 1px 1px 5px 1px #353535;
+}
+
+.divCardResultado > p > span{
+    font-size: 12px;
+}
+
+.loadingDiv{
+    color: white;
+    display: flex;
+    gap: 10px;
+}
+
+@keyframes popDot{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px); 
+    }
+}
+
+.loading_dot_pop{
+    transition: 0.5s ease-in-out;
+    animation: popDot 1s infinite;
+}
