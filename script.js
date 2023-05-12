@@ -43,7 +43,7 @@ async function sendRequest(action, userID, coluna, pesquisa) {
         headers: myHeaders,
         mode: 'cors',
         cache: 'default' };
-    await fetch("https://script.google.com/macros/s/AKfycbyoeZ2Rf4WO56nrTr1SzOfCf06IWqpCM5LtWDoX7kElWExa9ww1Bq99ojaYIFqDwoSr/exec?action="+action+"&userID="+userID+"&coluna="+coluna+"&pesquisa="+pesquisa, myInit)
+    await fetch("https://script.google.com/macros/s/AKfycbyU54d_SpTq97y7RiYbX5vwMzhIh3aV1E9UzrRNT0Ovt3p9aDv65Wifxuz2-SuEPnWJ/exec?action="+action+"&userID="+userID+"&coluna="+coluna+"&pesquisa="+pesquisa, myInit)
     .then((response) => response.json())
     .then((data) => {
         console.log("Success:", data);
